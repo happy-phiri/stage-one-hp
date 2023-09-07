@@ -1,4 +1,4 @@
-This is the stage on project of the Zuri internship.
+This is the stage one project of the Zuri Virtual internship.
 
 On this project I learnt about datasets and how to retrieve the data.
 
