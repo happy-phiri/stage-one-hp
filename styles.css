@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #4b6cb7;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #182848, #4b6cb7);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #182848, #4b6cb7);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+main, header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    max-width: 450px;
+    box-shadow: 0 0 8px gray;
+    border-radius: 10px;
+    padding: 2em;
+    text-align: center;
+}
+
+.avatar {
+    border-radius: 50%;
+    box-shadow: 0 0 10px #fff;
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    margin-bottom: 1.2em;
+    justify-self: center;
+}
+
+.name {
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+main p {
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    line-height: 1.3;
+}
+
+h1:hover,
+p:hover,
+.avatar:hover {
+    cursor: pointer;
+}
+
+p:hover {
+    font-weight: 500;
+}
+
+h1:hover {
+    font-weight: 600;
+}
+
+.avatar:hover {
+    transform: scale(1.1);
+    transition: 2000ms;
+}
